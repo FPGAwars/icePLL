@@ -1,3 +1,5 @@
+
+
 # icepll Collection
 
 [![Icestudio][icestudio-image]][icestudio-url]
@@ -5,6 +7,8 @@
 
 
 Working with PLLs (Phase Locked Loops)
+## Documentation
+Find all the information on the [WIKI page](https://github.com/FPGAwars/icePLL/wiki)  
 
 
 ## License
@@ -23,10 +27,14 @@ For installing and using this colection in Icestudio follow these steps:
 
 
 ## Authors
-* [todo](todo)
+* [Carlos Venegas](https://github.com/cavearr)
 
 ## Contributors
-* [todo](todo)
+* [Obijuan](https://github.com/Obijuan)
+
+
+-------
+![](https://github.com/FPGAwars/icestudio-wiki/raw/main/Logos/fgpawars-banner.svg)
 
 
 <!-- Badges -->
