@@ -1,0 +1,27 @@
+{
+  "name": "icepll",
+  "version": "0.1.0",
+  "description": "Working with PLLs (Phase Locked Loops)",
+  "header": "",
+  "footer": "https://github.com/FPGAwars/icestudio-wiki/raw/main/Logos/fgpawars-banner.svg",
+  "wiki": "",
+  "keywords": ["pll","frequency"],
+  "license": "LGPL-3.0",
+  "authors": [
+    {
+      "name": "todo",
+      "url": "todo"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "todo",
+      "url": "todo"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "branch": "main",
+    "url": "https://github.com/FPGAwars/icePLL"
+  }
+}
