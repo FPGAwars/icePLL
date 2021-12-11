@@ -105,42 +105,6 @@
           }
         },
         {
-          "id": "51eb9462-dd6e-4c00-8891-2d790409d886",
-          "type": "e47c334d36c4798efb8a0e749d33d70ee19e8dd9",
-          "position": {
-            "x": 1504,
-            "y": 280
-          },
-          "size": {
-            "width": 96,
-            "height": 64
-          }
-        },
-        {
-          "id": "7e28932a-9d87-4272-a819-03eaa475f1cb",
-          "type": "e47c334d36c4798efb8a0e749d33d70ee19e8dd9",
-          "position": {
-            "x": 1504,
-            "y": 552
-          },
-          "size": {
-            "width": 96,
-            "height": 64
-          }
-        },
-        {
-          "id": "0dcbdd26-8d27-493e-8d0f-45572f621037",
-          "type": "e47c334d36c4798efb8a0e749d33d70ee19e8dd9",
-          "position": {
-            "x": 1504,
-            "y": 416
-          },
-          "size": {
-            "width": 96,
-            "height": 64
-          }
-        },
-        {
           "id": "1a49fa6b-60b3-43f7-90f2-415786484783",
           "type": "9598619b7aec682ef25a2d4f81ff92d5cf202a55",
           "position": {
@@ -151,12 +115,48 @@
             "width": 96,
             "height": 128
           }
+        },
+        {
+          "id": "82fd1d54-2661-4af4-a974-c22596e353b9",
+          "type": "0bf0ef7a88053234d4f127ec2925a3882f6faf12",
+          "position": {
+            "x": 1504,
+            "y": 288
+          },
+          "size": {
+            "width": 96,
+            "height": 64
+          }
+        },
+        {
+          "id": "3a8eb461-dd40-4228-b057-d12ceb8f6c96",
+          "type": "0bf0ef7a88053234d4f127ec2925a3882f6faf12",
+          "position": {
+            "x": 1504,
+            "y": 416
+          },
+          "size": {
+            "width": 96,
+            "height": 64
+          }
+        },
+        {
+          "id": "3ce562dd-3d6b-4c71-94eb-ea5de1a8d83f",
+          "type": "0bf0ef7a88053234d4f127ec2925a3882f6faf12",
+          "position": {
+            "x": 1504,
+            "y": 552
+          },
+          "size": {
+            "width": 96,
+            "height": 64
+          }
         }
       ],
       "wires": [
         {
           "source": {
-            "block": "51eb9462-dd6e-4c00-8891-2d790409d886",
+            "block": "82fd1d54-2661-4af4-a974-c22596e353b9",
             "port": "6cd1b3df-3bb7-41b4-8e20-c13ce727a71e"
           },
           "target": {
@@ -166,7 +166,7 @@
         },
         {
           "source": {
-            "block": "0dcbdd26-8d27-493e-8d0f-45572f621037",
+            "block": "3a8eb461-dd40-4228-b057-d12ceb8f6c96",
             "port": "6cd1b3df-3bb7-41b4-8e20-c13ce727a71e"
           },
           "target": {
@@ -176,7 +176,7 @@
         },
         {
           "source": {
-            "block": "7e28932a-9d87-4272-a819-03eaa475f1cb",
+            "block": "3ce562dd-3d6b-4c71-94eb-ea5de1a8d83f",
             "port": "6cd1b3df-3bb7-41b4-8e20-c13ce727a71e"
           },
           "target": {
@@ -200,13 +200,13 @@
             "port": "6aa83a45-9324-44df-86ec-707ac595a89a"
           },
           "target": {
-            "block": "51eb9462-dd6e-4c00-8891-2d790409d886",
+            "block": "82fd1d54-2661-4af4-a974-c22596e353b9",
             "port": "eba22754-e004-4103-8389-80348c73822c"
           },
           "vertices": [
             {
               "x": 1296,
-              "y": 368
+              "y": 376
             }
           ]
         },
@@ -216,7 +216,7 @@
             "port": "14dff655-498f-4d68-b0ef-3f4c5c57f4b3"
           },
           "target": {
-            "block": "0dcbdd26-8d27-493e-8d0f-45572f621037",
+            "block": "3a8eb461-dd40-4228-b057-d12ceb8f6c96",
             "port": "eba22754-e004-4103-8389-80348c73822c"
           }
         },
@@ -226,7 +226,7 @@
             "port": "0918f4c7-cd52-406e-9f33-18777f66a293"
           },
           "target": {
-            "block": "7e28932a-9d87-4272-a819-03eaa475f1cb",
+            "block": "3ce562dd-3d6b-4c71-94eb-ea5de1a8d83f",
             "port": "eba22754-e004-4103-8389-80348c73822c"
           },
           "vertices": [
@@ -240,7 +240,183 @@
     }
   },
   "dependencies": {
-    "e47c334d36c4798efb8a0e749d33d70ee19e8dd9": {
+    "9598619b7aec682ef25a2d4f81ff92d5cf202a55": {
+      "package": {
+        "name": "PLL 25 to 12 Mhz",
+        "version": "1.0.0",
+        "description": "",
+        "author": "Fernando Mosquera",
+        "image": ""
+      },
+      "design": {
+        "graph": {
+          "blocks": [
+            {
+              "id": "6aa83a45-9324-44df-86ec-707ac595a89a",
+              "type": "basic.output",
+              "data": {
+                "name": "250Mhz"
+              },
+              "position": {
+                "x": 1480,
+                "y": 280
+              }
+            },
+            {
+              "id": "14dff655-498f-4d68-b0ef-3f4c5c57f4b3",
+              "type": "basic.output",
+              "data": {
+                "name": "125Mhz"
+              },
+              "position": {
+                "x": 1488,
+                "y": 416
+              }
+            },
+            {
+              "id": "15477ab2-6ad2-43d3-90a6-eefd07a01797",
+              "type": "basic.input",
+              "data": {
+                "name": "Clk",
+                "clock": false
+              },
+              "position": {
+                "x": 216,
+                "y": 488
+              }
+            },
+            {
+              "id": "0918f4c7-cd52-406e-9f33-18777f66a293",
+              "type": "basic.output",
+              "data": {
+                "name": "25 Mhz"
+              },
+              "position": {
+                "x": 1496,
+                "y": 552
+              }
+            },
+            {
+              "id": "eb642e79-87d6-4e7e-8752-113a62659bae",
+              "type": "basic.output",
+              "data": {
+                "name": "locked"
+              },
+              "position": {
+                "x": 1496,
+                "y": 688
+              }
+            },
+            {
+              "id": "b4e4c9dd-91f9-4e01-a980-1792caff20b3",
+              "type": "basic.info",
+              "data": {
+                "info": "input // 25 MHz, 0 deg\noutput clkop, // 250 MHz, 0 deg\noutput clkos, // 125 MHz, 0 deg\noutput clkos2, // 25 MHz, 0 deg",
+                "readonly": false
+              },
+              "position": {
+                "x": 752,
+                "y": 104
+              },
+              "size": {
+                "width": 312,
+                "height": 112
+              }
+            },
+            {
+              "id": "68525b9a-3686-4038-a32e-33f5f0fdeac1",
+              "type": "basic.code",
+              "data": {
+                "code": "\n// PLL   outputs  250 Mhz ,125 Mhz, 25 Mhz\n// code copied from emard (ulx3s team)\n\t\n\nwire clkfb;\nwire clkos;\nwire clkop;\n(* ICP_CURRENT=\"12\" *) (* LPF_RESISTOR=\"8\" *) (* MFG_ENABLE_FILTEROPAMP=\"1\" *) (* MFG_GMCREF_SEL=\"2\" *)\nEHXPLLL #(\n        .PLLRST_ENA(\"DISABLED\"),\n        .STDBY_ENABLE(\"DISABLED\"),\n        .INTFB_WAKE(\"DISABLED\"),\n        .DPHASE_SOURCE(\"DISABLED\"),\n        .CLKOP_FPHASE(0),\n        .CLKOP_CPHASE(0),\n        .OUTDIVIDER_MUXA(\"DIVA\"),\n        .CLKOP_ENABLE(\"ENABLED\"),\n        .CLKOP_DIV(2),\n        .CLKOS_ENABLE(\"ENABLED\"),\n        .CLKOS_DIV(4),\n        .CLKOS_CPHASE(0),\n        .CLKOS_FPHASE(0),\n        .CLKOS2_ENABLE(\"ENABLED\"),\n        .CLKOS2_DIV(20),\n        .CLKOS2_CPHASE(0),\n        .CLKOS2_FPHASE(0),\n        .CLKFB_DIV(10),\n        .CLKI_DIV(1),\n        .FEEDBK_PATH(\"INT_OP\")\n    ) pll_i (\n        .CLKI(clki),\n        .CLKFB(clkfb),\n        .CLKINTFB(clkfb),\n        .CLKOP(clkop),\n        .CLKOS(clkos),\n        .CLKOS2(clkos2),\n        .RST(1'b0),\n        .STDBY(1'b0),\n        .PHASESEL0(1'b0),\n        .PHASESEL1(1'b0),\n        .PHASEDIR(1'b1),\n        .PHASESTEP(1'b1),\n        .PHASELOADREG(1'b1),\n        .PLLWAKESYNC(1'b0),\n        .ENCLKOP(1'b0),\n        .LOCK(locked)\n\t);\nassign clkop = clkop;\n",
+                "params": [],
+                "ports": {
+                  "in": [
+                    {
+                      "name": "clki"
+                    }
+                  ],
+                  "out": [
+                    {
+                      "name": "clkop"
+                    },
+                    {
+                      "name": "clkos"
+                    },
+                    {
+                      "name": "clkos2"
+                    },
+                    {
+                      "name": "locked"
+                    }
+                  ]
+                }
+              },
+              "position": {
+                "x": 464,
+                "y": 248
+              },
+              "size": {
+                "width": 904,
+                "height": 536
+              }
+            }
+          ],
+          "wires": [
+            {
+              "source": {
+                "block": "15477ab2-6ad2-43d3-90a6-eefd07a01797",
+                "port": "out"
+              },
+              "target": {
+                "block": "68525b9a-3686-4038-a32e-33f5f0fdeac1",
+                "port": "clki"
+              }
+            },
+            {
+              "source": {
+                "block": "68525b9a-3686-4038-a32e-33f5f0fdeac1",
+                "port": "clkop"
+              },
+              "target": {
+                "block": "6aa83a45-9324-44df-86ec-707ac595a89a",
+                "port": "in"
+              }
+            },
+            {
+              "source": {
+                "block": "68525b9a-3686-4038-a32e-33f5f0fdeac1",
+                "port": "clkos"
+              },
+              "target": {
+                "block": "14dff655-498f-4d68-b0ef-3f4c5c57f4b3",
+                "port": "in"
+              }
+            },
+            {
+              "source": {
+                "block": "68525b9a-3686-4038-a32e-33f5f0fdeac1",
+                "port": "clkos2"
+              },
+              "target": {
+                "block": "0918f4c7-cd52-406e-9f33-18777f66a293",
+                "port": "in"
+              }
+            },
+            {
+              "source": {
+                "block": "68525b9a-3686-4038-a32e-33f5f0fdeac1",
+                "port": "locked"
+              },
+              "target": {
+                "block": "eb642e79-87d6-4e7e-8752-113a62659bae",
+                "port": "in"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "0bf0ef7a88053234d4f127ec2925a3882f6faf12": {
       "package": {
         "name": "probe_tool-clock/1000",
         "version": "1.0.0",
@@ -252,17 +428,6 @@
         "graph": {
           "blocks": [
             {
-              "id": "6cd1b3df-3bb7-41b4-8e20-c13ce727a71e",
-              "type": "basic.output",
-              "data": {
-                "name": "clk_freq/1000"
-              },
-              "position": {
-                "x": 1640,
-                "y": 192
-              }
-            },
-            {
               "id": "eba22754-e004-4103-8389-80348c73822c",
               "type": "basic.input",
               "data": {
@@ -270,8 +435,19 @@
                 "clock": true
               },
               "position": {
-                "x": 744,
-                "y": 288
+                "x": 752,
+                "y": 8
+              }
+            },
+            {
+              "id": "6cd1b3df-3bb7-41b4-8e20-c13ce727a71e",
+              "type": "basic.output",
+              "data": {
+                "name": "clk_freq/1000"
+              },
+              "position": {
+                "x": 1784,
+                "y": 176
               }
             },
             {
@@ -279,7 +455,7 @@
               "type": "basic.constant",
               "data": {
                 "name": "N",
-                "value": "1000",
+                "value": "500",
                 "local": false
               },
               "position": {
@@ -331,12 +507,24 @@
                 "readonly": false
               },
               "position": {
-                "x": 696,
-                "y": -216
+                "x": 760,
+                "y": -280
               },
               "size": {
                 "width": 928,
                 "height": 232
+              }
+            },
+            {
+              "id": "8a0a7d25-d64f-45f8-85b8-47759022287d",
+              "type": "a20433be5bd652b5ca9dc0339207d2f694145338",
+              "position": {
+                "x": 1616,
+                "y": 176
+              },
+              "size": {
+                "width": 96,
+                "height": 64
               }
             }
           ],
@@ -394,13 +582,19 @@
             },
             {
               "source": {
-                "block": "527502a2-0ba7-492f-8ff6-3d6532bfab26",
-                "port": "4e8afe74-8f38-4873-97ee-f7585d99a4aa"
+                "block": "eba22754-e004-4103-8389-80348c73822c",
+                "port": "out"
               },
               "target": {
-                "block": "6cd1b3df-3bb7-41b4-8e20-c13ce727a71e",
-                "port": "in"
-              }
+                "block": "5d617600-3bf9-4e82-9a55-f58f84c8c098",
+                "port": "ca7c5f10-efb6-43f9-9364-52d751fc0bc6"
+              },
+              "vertices": [
+                {
+                  "x": 1000,
+                  "y": 176
+                }
+              ]
             },
             {
               "source": {
@@ -408,8 +602,28 @@
                 "port": "out"
               },
               "target": {
-                "block": "5d617600-3bf9-4e82-9a55-f58f84c8c098",
-                "port": "ca7c5f10-efb6-43f9-9364-52d751fc0bc6"
+                "block": "8a0a7d25-d64f-45f8-85b8-47759022287d",
+                "port": "3943e194-090b-4553-9df3-88bc4b17abc2"
+              }
+            },
+            {
+              "source": {
+                "block": "527502a2-0ba7-492f-8ff6-3d6532bfab26",
+                "port": "4e8afe74-8f38-4873-97ee-f7585d99a4aa"
+              },
+              "target": {
+                "block": "8a0a7d25-d64f-45f8-85b8-47759022287d",
+                "port": "bf2f0c53-2d04-4cba-aa70-2df85502d24f"
+              }
+            },
+            {
+              "source": {
+                "block": "8a0a7d25-d64f-45f8-85b8-47759022287d",
+                "port": "aa84d31e-cd92-44c7-bb38-c7a4cd903a78"
+              },
+              "target": {
+                "block": "6cd1b3df-3bb7-41b4-8e20-c13ce727a71e",
+                "port": "in"
               }
             }
           ]
@@ -9498,176 +9712,140 @@
         }
       }
     },
-    "9598619b7aec682ef25a2d4f81ff92d5cf202a55": {
+    "a20433be5bd652b5ca9dc0339207d2f694145338": {
       "package": {
-        "name": "PLL 25 to 12 Mhz",
-        "version": "1.0.0",
-        "description": "",
-        "author": "Fernando Mosquera",
-        "image": ""
+        "name": "Biestable-T",
+        "version": "0.1",
+        "description": "Biestable de cambio (Tipo T). Cuando se recibe un tic cambia de estado",
+        "author": "Juan González-Gómez (Obijuan)",
+        "image": "%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%22352.621%22%20height=%22328.166%22%20viewBox=%220%200%2093.297626%2086.827316%22%3E%3Ctext%20style=%22line-height:1.25;-inkscape-font-specification:ubuntu%22%20x=%2242.514%22%20y=%2290.458%22%20font-weight=%22400%22%20font-size=%2232.213%22%20font-family=%22ubuntu%22%20letter-spacing=%220%22%20word-spacing=%220%22%20stroke-width=%222.013%22%20transform=%22translate(-21.167%20-56.576)%22%3E%3Ctspan%20x=%2242.514%22%20y=%2290.458%22%20style=%22-inkscape-font-specification:'ubuntu%20Medium'%22%20font-weight=%22500%22%3E1%3C/tspan%3E%3C/text%3E%3Cpath%20d=%22M82.577%208.301l6.424-6.173-.751%2020.271-19.854-.75%206.09-6.007s-4.672-4.922-12.93-5.005c-8.26-.084-13.265%204.588-13.265%204.588l.084-6.84-5.172-2.253s8.091-6.34%2018.853-5.84c10.761.501%2020.521%208.01%2020.521%208.01zM38.94%2054.949l-6.424%206.173.75-20.271%2019.855.75-6.09%206.007s4.672%204.922%2012.93%205.005c8.26.084%2013.264-4.588%2013.264-4.588l-.083%206.84%205.172%202.253s-8.092%206.34-18.853%205.84C48.7%2062.456%2038.94%2054.948%2038.94%2054.948z%22%20fill=%22green%22%20stroke=%22#000%22%20stroke-width=%22.529%22/%3E%3Cg%20transform=%22translate(-93.518%20-9.898)%20scale(1.09073)%22%20stroke=%22green%22%20stroke-linecap=%22round%22%3E%3Ccircle%20r=%2214.559%22%20cy=%2273.815%22%20cx=%22100.602%22%20fill=%22#ececec%22%20stroke-width=%22.608%22%20stroke-linejoin=%22round%22/%3E%3Cpath%20d=%22M106.978%2082.142h-3.353V63.316H97.54v18.678h-3.652%22%20fill=%22none%22%20stroke-width=%221.521%22/%3E%3C/g%3E%3Ctext%20style=%22line-height:1.25;-inkscape-font-specification:ubuntu%22%20x=%2297.553%22%20y=%22107.059%22%20font-weight=%22400%22%20font-size=%2232.213%22%20font-family=%22ubuntu%22%20letter-spacing=%220%22%20word-spacing=%220%22%20stroke-width=%222.013%22%20transform=%22translate(-21.167%20-56.576)%22%3E%3Ctspan%20x=%2297.553%22%20y=%22107.059%22%20style=%22-inkscape-font-specification:'ubuntu%20Medium'%22%20font-weight=%22500%22%3E0%3C/tspan%3E%3C/text%3E%3Cpath%20d=%22M62.954%2034.353l2.22%208.819-5.217-7.525%22%20fill=%22#ccc%22%20stroke=%22#000%22%20stroke-width=%22.529%22%20stroke-linecap=%22round%22%20stroke-linejoin=%22round%22/%3E%3Cpath%20d=%22M62.083%2029.816l-4.32-8.077%202.89-1.247-.693-1.606-9.365%204.042.693%201.606%202.73-1.178%203.142%208.675s-2.049%201.32-1.902%203.08c.146%201.76%201.032%202.095.89%202.182l10.598-4.59s-.534-1.897-1.759-2.446c-1.224-.549-2.904-.441-2.904-.441z%22%20fill=%22red%22%20stroke=%22#000%22%20stroke-width=%22.529%22%20stroke-linecap=%22round%22%20stroke-linejoin=%22round%22/%3E%3C/svg%3E"
       },
       "design": {
         "graph": {
           "blocks": [
             {
-              "id": "6aa83a45-9324-44df-86ec-707ac595a89a",
-              "type": "basic.output",
-              "data": {
-                "name": "250Mhz"
-              },
-              "position": {
-                "x": 1480,
-                "y": 280
-              }
-            },
-            {
-              "id": "14dff655-498f-4d68-b0ef-3f4c5c57f4b3",
-              "type": "basic.output",
-              "data": {
-                "name": "125Mhz"
-              },
-              "position": {
-                "x": 1488,
-                "y": 416
-              }
-            },
-            {
-              "id": "15477ab2-6ad2-43d3-90a6-eefd07a01797",
+              "id": "3943e194-090b-4553-9df3-88bc4b17abc2",
               "type": "basic.input",
               "data": {
-                "name": "Clk",
+                "name": "",
+                "clock": true
+              },
+              "position": {
+                "x": 200,
+                "y": 96
+              }
+            },
+            {
+              "id": "aa84d31e-cd92-44c7-bb38-c7a4cd903a78",
+              "type": "basic.output",
+              "data": {
+                "name": ""
+              },
+              "position": {
+                "x": 680,
+                "y": 184
+              }
+            },
+            {
+              "id": "bf2f0c53-2d04-4cba-aa70-2df85502d24f",
+              "type": "basic.input",
+              "data": {
+                "name": "T",
                 "clock": false
               },
               "position": {
-                "x": 216,
-                "y": 488
+                "x": 224,
+                "y": 200
               }
             },
             {
-              "id": "0918f4c7-cd52-406e-9f33-18777f66a293",
-              "type": "basic.output",
+              "id": "65194b18-5d2a-41b2-bd86-01be99978ad6",
+              "type": "basic.constant",
               "data": {
-                "name": "25 Mhz"
+                "name": "",
+                "value": "0",
+                "local": false
               },
               "position": {
-                "x": 1496,
-                "y": 552
+                "x": 456,
+                "y": 64
               }
             },
             {
-              "id": "eb642e79-87d6-4e7e-8752-113a62659bae",
-              "type": "basic.output",
-              "data": {
-                "name": "locked"
-              },
-              "position": {
-                "x": 1496,
-                "y": 688
-              }
-            },
-            {
-              "id": "b4e4c9dd-91f9-4e01-a980-1792caff20b3",
-              "type": "basic.info",
-              "data": {
-                "info": "input // 25 MHz, 0 deg\noutput clkop, // 250 MHz, 0 deg\noutput clkos, // 125 MHz, 0 deg\noutput clkos2, // 25 MHz, 0 deg",
-                "readonly": false
-              },
-              "position": {
-                "x": 752,
-                "y": 104
-              },
-              "size": {
-                "width": 312,
-                "height": 112
-              }
-            },
-            {
-              "id": "68525b9a-3686-4038-a32e-33f5f0fdeac1",
+              "id": "bdc170f0-4468-4137-bd79-4624c9cadf2b",
               "type": "basic.code",
               "data": {
-                "code": "\n// PLL   outputs  250 Mhz ,125 Mhz, 25 Mhz\n// code copied from emard (ulx3s team)\n\t\n\nwire clkfb;\nwire clkos;\nwire clkop;\n(* ICP_CURRENT=\"12\" *) (* LPF_RESISTOR=\"8\" *) (* MFG_ENABLE_FILTEROPAMP=\"1\" *) (* MFG_GMCREF_SEL=\"2\" *)\nEHXPLLL #(\n        .PLLRST_ENA(\"DISABLED\"),\n        .STDBY_ENABLE(\"DISABLED\"),\n        .INTFB_WAKE(\"DISABLED\"),\n        .DPHASE_SOURCE(\"DISABLED\"),\n        .CLKOP_FPHASE(0),\n        .CLKOP_CPHASE(0),\n        .OUTDIVIDER_MUXA(\"DIVA\"),\n        .CLKOP_ENABLE(\"ENABLED\"),\n        .CLKOP_DIV(2),\n        .CLKOS_ENABLE(\"ENABLED\"),\n        .CLKOS_DIV(4),\n        .CLKOS_CPHASE(0),\n        .CLKOS_FPHASE(0),\n        .CLKOS2_ENABLE(\"ENABLED\"),\n        .CLKOS2_DIV(20),\n        .CLKOS2_CPHASE(0),\n        .CLKOS2_FPHASE(0),\n        .CLKFB_DIV(10),\n        .CLKI_DIV(1),\n        .FEEDBK_PATH(\"INT_OP\")\n    ) pll_i (\n        .CLKI(clki),\n        .CLKFB(clkfb),\n        .CLKINTFB(clkfb),\n        .CLKOP(clkop),\n        .CLKOS(clkos),\n        .CLKOS2(clkos2),\n        .RST(1'b0),\n        .STDBY(1'b0),\n        .PHASESEL0(1'b0),\n        .PHASESEL1(1'b0),\n        .PHASEDIR(1'b1),\n        .PHASESTEP(1'b1),\n        .PHASELOADREG(1'b1),\n        .PLLWAKESYNC(1'b0),\n        .ENCLKOP(1'b0),\n        .LOCK(locked)\n\t);\nassign clkop = clkop;\n",
-                "params": [],
+                "code": "reg q = INI;\nalways @(posedge clk)\n  if (T)\n    q <= ~q;",
+                "params": [
+                  {
+                    "name": "INI"
+                  }
+                ],
                 "ports": {
                   "in": [
                     {
-                      "name": "clki"
+                      "name": "clk"
+                    },
+                    {
+                      "name": "T"
                     }
                   ],
                   "out": [
                     {
-                      "name": "clkop"
-                    },
-                    {
-                      "name": "clkos"
-                    },
-                    {
-                      "name": "clkos2"
-                    },
-                    {
-                      "name": "locked"
+                      "name": "q"
                     }
                   ]
                 }
               },
               "position": {
-                "x": 464,
-                "y": 248
+                "x": 384,
+                "y": 168
               },
               "size": {
-                "width": 904,
-                "height": 536
+                "width": 232,
+                "height": 88
               }
             }
           ],
           "wires": [
             {
               "source": {
-                "block": "15477ab2-6ad2-43d3-90a6-eefd07a01797",
+                "block": "3943e194-090b-4553-9df3-88bc4b17abc2",
                 "port": "out"
               },
               "target": {
-                "block": "68525b9a-3686-4038-a32e-33f5f0fdeac1",
-                "port": "clki"
+                "block": "bdc170f0-4468-4137-bd79-4624c9cadf2b",
+                "port": "clk"
               }
             },
             {
               "source": {
-                "block": "68525b9a-3686-4038-a32e-33f5f0fdeac1",
-                "port": "clkop"
+                "block": "bf2f0c53-2d04-4cba-aa70-2df85502d24f",
+                "port": "out"
               },
               "target": {
-                "block": "6aa83a45-9324-44df-86ec-707ac595a89a",
+                "block": "bdc170f0-4468-4137-bd79-4624c9cadf2b",
+                "port": "T"
+              }
+            },
+            {
+              "source": {
+                "block": "bdc170f0-4468-4137-bd79-4624c9cadf2b",
+                "port": "q"
+              },
+              "target": {
+                "block": "aa84d31e-cd92-44c7-bb38-c7a4cd903a78",
                 "port": "in"
               }
             },
             {
               "source": {
-                "block": "68525b9a-3686-4038-a32e-33f5f0fdeac1",
-                "port": "clkos"
+                "block": "65194b18-5d2a-41b2-bd86-01be99978ad6",
+                "port": "constant-out"
               },
               "target": {
-                "block": "14dff655-498f-4d68-b0ef-3f4c5c57f4b3",
-                "port": "in"
-              }
-            },
-            {
-              "source": {
-                "block": "68525b9a-3686-4038-a32e-33f5f0fdeac1",
-                "port": "clkos2"
-              },
-              "target": {
-                "block": "0918f4c7-cd52-406e-9f33-18777f66a293",
-                "port": "in"
-              }
-            },
-            {
-              "source": {
-                "block": "68525b9a-3686-4038-a32e-33f5f0fdeac1",
-                "port": "locked"
-              },
-              "target": {
-                "block": "eb642e79-87d6-4e7e-8752-113a62659bae",
-                "port": "in"
+                "block": "bdc170f0-4468-4137-bd79-4624c9cadf2b",
+                "port": "INI"
               }
             }
           ]
