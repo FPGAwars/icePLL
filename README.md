@@ -17,14 +17,26 @@ Licensed under [LGPL-3.0](https://opensource.org/licenses/LGPL-3.0).
 
 ## Install
 
-For installing and using this colection in Icestudio follow these steps:
+For installing and using this collection in Icestudio follow these steps:
 
 * Download the collection: [stable](https://github.com/FPGAwars/icePLL/archive/refs/tags/v0.1.0.zip) or [development](https://github.com/FPGAwars/icePLL/archive/refs/heads/main.zip)
 * Install the collection: *Tools > Collections > Add*
 * Select the collection: *Select > Collection*
 
+## Usage for ice40 chip series
+
+In the collection manager the icePLL-main menu should now be visible. Here you can find PLL blocks for the ice40 and ECP5 chips.
+For the ice40 LP/HX the PLL's are located at I/O bank 2, see the ice40 [datasheet](https://datasheet.lcsc.com/lcsc/2201180600_Lattice-ICE40HX4K-TQ144_C1521989.pdf) under "Architecture Overview. 
+For other chipset checkout their datasheet's, fx via octopart.
+The PLL's can use a reference clk directly, if the clk is connected to an GBIN on I/O bank 2, in the case of the ice40 LP/HX series. Otherwise the reference clk can be used in-directly.
+This results in longer routing, leading to a potionel issue at higher freqencies although not yet confirmed.
+
+If a clk is connected directly to the PLL's, then the pll40_pad should be used. If clk is not directly connected then pll40_core.
 
 
+## Usage for ECP5
+
+* TODO
 
 ## Authors
 * [Carlos Venegas](https://github.com/cavearr)
